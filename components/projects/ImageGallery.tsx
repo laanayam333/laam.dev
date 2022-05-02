@@ -31,7 +31,7 @@ const ImageGallery = ({ images, alt }: IProps) => {
                       height={3}
                       objectFit="cover"
                       objectPosition="center"
-                      className="h-full w-full"
+                      className="h-full w-full bg-neutral-100"
                     />
                   </span>
                   <span

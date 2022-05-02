@@ -42,7 +42,6 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params }: IProps) => {
-  console.log(JSON.stringify(params, null, 2));
   const project = allProjects.find((project) => project.slug === params.slug);
 
   return { props: { project } };
