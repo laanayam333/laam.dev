@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Founders Grotesk Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk-condensed/FoundersGrotesk-X-Cond-Regular.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk-condensed/FoundersGrotesk-X-Cond-Regular-Bold.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk/FoundersGrotesk-Light.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk/FoundersGrotesk-LightItalic.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk/FoundersGrotesk-Regular.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk/FoundersGrotesk-RegularItalic.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk/FoundersGrotesk-Medium.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk/FoundersGrotesk-MediumItalic.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk/FoundersGrotesk-SemiBold.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk/FoundersGrotesk-SemBdIta.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk/FoundersGrotesk-Bold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Founders Grotesk';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/founders-grotesk/FoundersGrotesk-BoldItalic.woff2)
+    format('woff2');
+}
+
+@layer base {
+  html {
+    @apply h-full overflow-x-hidden;
+  }
+
+  body {
+    @apply h-full overflow-x-hidden text-neutral-900;
+  }
+}
+
+@layer components {
+  .tw-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
