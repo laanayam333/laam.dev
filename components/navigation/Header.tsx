@@ -16,6 +16,10 @@ export default function Header() {
         </Link>
       </div>
 
+      <div>
+        <a href="mailto:hello@laam.dev">hello@laam.dev</a>
+      </div>
+
       {/* <NavLinks /> */}
     </nav>
   );
