@@ -37,7 +37,7 @@ const ProjectList = ({ projects }: IProps) => {
           className="w-fit-content"
         >
           <Link href={`projects/${project.slug}`}>
-            <motion.a className="tw-transition cursor-pointer font-heading text-5xl font-bold hover:text-yellow-500 lg:text-7xl">
+            <motion.a className="tw-transition cursor-pointer font-heading text-5xl font-bold hover:text-amber-400 lg:text-7xl">
               {project.title}
             </motion.a>
           </Link>

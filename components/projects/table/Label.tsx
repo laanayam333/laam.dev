@@ -4,7 +4,7 @@ interface IProps {
 
 const Label = ({ children }: IProps) => {
   return (
-    <div className="col-span-1 text-right text-base text-neutral-500">
+    <div className="col-span-1 text-right text-base text-stone-500">
       {children}
     </div>
   );

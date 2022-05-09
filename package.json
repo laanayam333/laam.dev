@@ -9,6 +9,7 @@
     "postinstall": "husky install"
   },
   "dependencies": {
+    "@formspree/react": "^2.2.5",
     "@headlessui/react": "^1.6.0",
     "contentlayer": "^0.2.4",
     "framer-motion": "^6.3.3",

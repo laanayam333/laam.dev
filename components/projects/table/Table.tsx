@@ -4,7 +4,7 @@ interface IProps {
 
 const Table = ({ children }: IProps) => {
   return (
-    <ul role="list" className="divide-y divide-neutral-200">
+    <ul role="list" className="divide-y divide-stone-300">
       {children}
     </ul>
   );

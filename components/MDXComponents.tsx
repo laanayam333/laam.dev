@@ -42,7 +42,7 @@ function RoundedImage(props: ImageProps) {
     <Image
       alt={props.alt}
       src={props.src}
-      className="rounded-lg bg-neutral-100"
+      className="rounded-lg"
       layout="responsive"
       width={4}
       height={3}

@@ -17,7 +17,7 @@ const DetailsTab = ({ label, children }: IProps) => {
             <Disclosure.Button className="group relative flex w-full items-center justify-between py-6 text-left">
               <span
                 className={classNames(
-                  open ? 'text-yellow-600' : 'text-neutral-900',
+                  open ? 'text-stone-700' : 'text-stone-500',
                   'text-lg font-medium uppercase tracking-widest lg:text-xl'
                 )}
               >
@@ -26,12 +26,17 @@ const DetailsTab = ({ label, children }: IProps) => {
               <span className="ml-6 flex items-center">
                 {open ? (
                   <IoRemoveOutline
-                    className="tw-transition block h-6 w-6 text-yellow-400 group-hover:text-yellow-500"
+                    className={classNames(
+                      open
+                        ? 'text-stone-700'
+                        : 'text-stone-500 group-hover:text-amber-400',
+                      'tw-transition block h-6 w-6'
+                    )}
                     aria-hidden="true"
                   />
                 ) : (
                   <IoAddOutline
-                    className="tw-transition block h-6 w-6 text-neutral-400 group-hover:text-neutral-500"
+                    className="tw-transition block h-6 w-6 text-stone-500 group-hover:text-amber-400"
                     aria-hidden="true"
                   />
                 )}

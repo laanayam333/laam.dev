@@ -18,32 +18,21 @@ const HomePage = ({ projects }: IProps) => {
         metaDescription="Portfolio website of Madrid-based frontend web developer Luis Alejandro Anaya Marín."
       />
 
-      <article className="tw- mx-auto max-w-7xl">
-        {/* <section className="grid grid-cols-2 gap-x-24">
-          <h1 className="col-span-1 flex flex-col font-heading text-9xl font-bold uppercase">
+      <article className="mx-auto max-w-7xl">
+        <section className="flex justify-end text-right">
+          <h1 className="w-full text-4xl md:w-2/3 md:text-5xl">
+            <span className="text-amber-400">L</span>uis{' '}
+            <span className="text-amber-400">A</span>lejandro{' '}
+            <span className="text-amber-400">A</span>naya{' '}
+            <span className="text-amber-400">M</span>arín
             <span>
-              <span className="text-yellow-600">L</span>uis
-            </span>
-            <span>
-              <span className="text-yellow-600">A</span>lejandro
-            </span>
-            <span>
-              <span className="text-yellow-600">A</span>naya
-            </span>
-            <span>
-              <span className="text-yellow-600">M</span>arín
+              , freelance frontend web developer and UX/UI designer based in
+              Madrid, Spain.
             </span>
           </h1>
-          <p className="col-span-1 place-self-end text-5xl">
-            <span className="text-amber-500">L</span>uis{' '}
-            <span className="text-amber-500">A</span>lejandro{' '}
-            <span className="text-amber-500">A</span>naya{' '}
-            <span className="text-amber-500">M</span>arín, freelance web
-            developer and designer based in Madrid, Spain.
-          </p>
-        </section> */}
+        </section>
 
-        <section>
+        <section className="mt-24">
           <ProjectList projects={projects} />
         </section>
       </article>

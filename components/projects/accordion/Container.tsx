@@ -3,7 +3,7 @@ interface IProps {
 }
 
 const AccordionContainer = ({ children }: IProps) => {
-  return <div className="divide-y divide-neutral-200">{children}</div>;
+  return <div className="divide-y divide-stone-300">{children}</div>;
 };
 
 export default AccordionContainer;

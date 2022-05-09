@@ -17,7 +17,7 @@ const ImageGallery = ({ images, alt }: IProps) => {
           {images?.map((image, idx) => (
             <Tab
               key={idx}
-              className="relative flex h-12 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-neutral-900 hover:bg-neutral-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4 lg:h-28"
+              className="relative flex h-12 cursor-pointer items-center justify-center rounded-md text-sm font-medium uppercase text-stone-900 ring-stone-300 hover:bg-stone-50 focus:outline-none focus:ring focus:ring-stone-200 focus:ring-opacity-50 focus:ring-offset-8 lg:h-28"
             >
               {({ selected }) => (
                 <>
@@ -31,12 +31,12 @@ const ImageGallery = ({ images, alt }: IProps) => {
                       height={3}
                       objectFit="cover"
                       objectPosition="center"
-                      className="h-full w-full bg-neutral-100"
+                      className="h-full w-full"
                     />
                   </span>
                   <span
                     className={classNames(
-                      selected ? 'ring-yellow-500' : 'ring-transparent',
+                      selected ? 'ring-amber-300' : 'ring-transparent',
                       'pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2'
                     )}
                     aria-hidden="true"
@@ -59,7 +59,7 @@ const ImageGallery = ({ images, alt }: IProps) => {
               height={3}
               objectFit="cover"
               objectPosition="center"
-              className="h-full w-full bg-neutral-100 sm:rounded-lg"
+              className="h-full w-full sm:rounded-lg"
             />
           </Tab.Panel>
         ))}
