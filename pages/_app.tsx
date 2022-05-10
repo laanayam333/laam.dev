@@ -28,8 +28,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
 
       <Layout>
-        <AnimatePresence exitBeforeEnter initial={false}>
-          <Component {...pageProps} key={router.asPath} />
+        <AnimatePresence
+          initial={false}
+          exitBeforeEnter
+          onExitComplete={() => window.scrollTo(0, 0)}
+        >
+          <Component {...pageProps} canonical={url} key={url} />
         </AnimatePresence>
       </Layout>
     </>
